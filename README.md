@@ -16,7 +16,7 @@ Selecting the ‘Events’ tab in the Navigation Bar will direct you to our Even
 
 Moving to the ‘Day Trips’ tab will direct you to the Day Trips Page. Here you will find blog posts about suggested day trip opportunities in your area. Each day trip features a modal with information about the suggested trip, including location, hours of operation, and recommended activities.
 
-Our Activities tab will direct you to the Activities Page where a multitude of different opportunities to explore and get to know your city within in a college-student’s budget are recommended. There's tags and icons for extra information and accessibility.
+Our Activities tab will direct you to the Activities Page where a multitude of different opportunities to explore and get to know your city within in a college-student’s budget are recommended. There are tags and icons for extra information and accessibility.
 
 Our last tab, “Restaurants & Bars” leads you to our final page where restaurants and bars in the surrounding area are listed. Each card lists information about the location, hours,and  price with a direct link to the restaurant’s menu.
  
