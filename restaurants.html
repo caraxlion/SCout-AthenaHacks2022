@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="restaurants.css">
+        <title>SCout: Restaurants & Bars</title>
+    </head>
+
+<body>
+    <div class="header">
+        <p><strong>SC</strong>out</p>
+        <img id="logo-img" src="/src/logo.png">
+        </div>
+    
+        <section>
+        <nav>
+            <ul class="menuItems">
+            <li id="nav-tab"><a href="home.html" data-item='Home'>Home</a></li>
+            <li id="nav-tab"><a href='events.html' data-item='Projects'>Events</a></li>
+            <li id="nav-tab"><a href='daytrips.html' data-item='Blog'>Day Trips</a></li>
+            <li id="nav-tab"><a href='activities.html' data-item='Projects'>Activities</a></li>
+            <li id="nav-tab"><a href='restaurants.html' data-item='Projects'>Restaurants/Bars</a></li>
+            </ul>
+        </nav>
+        </section>
+        
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">USC</a>
+            <div class="dropdown-content">
+              <a href="#">UC - University of Cincinnati</a>
+              <a href="#">CU - University of Colorado</a>
+              <a href="#">USC - University of Southern California</a>
+            </div>
+        </li>
+
+        <!--Restaurant Cards-->
+    <div class = "row">
+        <div class = "column">
+            <div class="container" id="dulce">
+                <div class="card">
+                <div class="contentBx">
+                    <h2>Dulce</h2>
+                    <div class = "cuisine">
+                        <h3>Cafe</h3>
+                    <div class = "price">
+                        <h3>$</h3>
+                    <div class="hours">
+                        <h3>8 am-6 pm</h3>
+                    </div>
+                    <div class="street">
+                        <h3>3096 McClintock Ave Ste 1420</h3>
+                    </div>
+                    <a href="">MENU</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class = "column">
+            <div class="container" id="dirt">
+                <div class="card">
+                <div class="contentBx">
+                    <h2>Dirt Dog</h2>
+                    <div class = "cuisine">
+                        <h3>Hot Dogs</h3>
+                    <div class = "price">
+                        <h3>$</h3>
+                    <div class="hours">
+                        <h3>10:30 am-11 pm M-Th</h3>
+                        <h3>10:30-12 am F-Sun</h3>
+                    </div>
+                    <div class="street">
+                        <h3>2528 S Figueroa St</h3>
+                    </div>
+                    <a href="https://www.dirtdogla.com/downtown-la">MENU</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class = "column">
+            <div class="container" id="barngrill">
+                <div class="card">
+                <div class="contentBx">
+                    <h2>901 Bar & Grill</h2>
+                    <div class = "cuisine">
+                        <h3>American</h3>
+                    <div class = "price">
+                        <h3>$</h3>
+                    <div class="hours">
+                        <h3>3-9 pm M-Sat</h3>
+                    </div>
+                    <div class="street">
+                        <h3>2902 S Figueroa St</h3>
+                    </div>
+                    <a href="https://www.901bargrill.com/menu.aspx">MENU</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+        
+
+       
+
+          <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+          <script>
+           //Get the button
+           var mybutton = document.getElementById("myBtn");
+           
+           // When the user scrolls down 20px from the top of the document, show the button
+           window.onscroll = function() {scrollFunction()};
+           
+           function scrollFunction() {
+             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+               mybutton.style.display = "block";
+             } else {
+               mybutton.style.display = "none";
+             }
+           }
+           
+           // When the user clicks on the button, scroll to the top of the document
+           function topFunction() {
+             document.body.scrollTop = 0;
+             document.documentElement.scrollTop = 0;
+           }
+           </script>
+    
+</body>
+
+</html>

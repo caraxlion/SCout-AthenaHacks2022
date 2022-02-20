@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="home.css">
+        <title>Project: AthenaHacks Website</title>
+        
+    </head>
+
+
+<body>
+    <div class="header">
+    <p><strong>SC</strong>out</p>
+    <img id="logo-img" src="/src/logo.png">
+    </div>
+
+    <section>
+    <nav>
+        <ul class="menuItems">
+        <li id="nav-tab"><a href="home.html" data-item='Home'>Home</a></li>
+        <li id="nav-tab"><a href='events.html' data-item='Projects'>Events</a></li>
+        <li id="nav-tab"><a href='daytrips.html' data-item='Blog'>Day Trips</a></li>
+        <li id="nav-tab"><a href='activities.html' data-item='Projects'>Activities</a></li>
+        <li id="nav-tab"><a href='restaurants.html' data-item='Projects'>Restaurants/Bars</a></li>
+        </ul>
+    </nav>
+    </section>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">USC</a>
+        <div class="dropdown-content">
+          <a href="#">UC - University of Cincinnati</a>
+          <a href="#">CU - University of Colorado</a>
+          <a href="#">USC - University of Southern California</a>
+        </div>
+    </li>
+    
+    <!-- SLIDESHOW -->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="/src/HollywoodSign.jpeg" style="width:100%" width="400" height="500"/>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="/src/SantaMonicaPier.jpeg" style="width:100%" width="400" height="500"/>
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="/src/UniversalStudiosGlobe.jpeg" style="width:100%" width="400" height="500"/>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/src/GriffithObservatory.jpeg" style="width:100%" width="400" height="500"/>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/src/UnionStationDenver.jpeg" style="width:100%" width="400" height="500"/>
+      </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      
+      <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+      }
+      </script>
+
+
+
+
+
+<header>
+    <h1>About the Creators </h1>
+  </header>
+  <div class="band">
+    <div class="item-1">
+      <a href="https://www.linkedin.com/in/tammytru/" class="card">
+        <div class="thumb" style="background-image: url(https://media-exp1.licdn.com/dms/image/C4E03AQGpPzJMGE1A9Q/profile-displayphoto-shrink_800_800/0/1631159437583?e=1651104000&v=beta&t=b3pRJNis6hkrpk0eCtMcCPR6Sshxm3hQ3dswzRoRang);"></div>
+        <article>
+          <h1>Tammy Truong</h1>
+          <span>Freshman studying CS+BA at USC</span>
+        </article>
+      </a>
+    </div>
+    <div class="item-2">
+      <a href="https://www.linkedin.com/in/caroline-richards-039192169/" class="card">
+        <div class="thumb" style="background-image: url(https://media-exp1.licdn.com/dms/image/C4E03AQGBYZyT4wh7-Q/profile-displayphoto-shrink_800_800/0/1551556373214?e=1651104000&v=beta&t=0vSxEaS0kVPNiRqzYWralID9QZp6k14nzA7a8oPtDUs);"></div>
+        <article>
+          <h1>Caroline Richards</h1>
+          <span>Applied & Computational Mathematics Major at USC</span>
+        </article>
+      </a>
+    </div>
+    <div class="item-3">
+      <a href="https://www.linkedin.com/in/alexis-chau/" class="card">
+        <div class="thumb" style="background-image: url(https://media-exp1.licdn.com/dms/image/C5603AQEzsIgN37jLQQ/profile-displayphoto-shrink_400_400/0/1641758942564?e=1651104000&v=beta&t=4EWsmCYRz_fsskyUJY3SbUfX0XPeaMryu32XenRqe_U);"></div>
+        <article>
+          <h1>Alexis Chau</h1>
+          <span>2nd year Computer Science major at UC Irvine</span>
+        </article>
+      </a>
+    </div>
+    <div class="item-4">
+      <a href="https://webdesign.tutsplus.com/tutorials/how-to-code-a-scrolling-alien-lander-website--cms-26826" class="card">
+        <div class="thumb" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/landing.png);"></div>
+        <article>
+          <h1>Alicia Luo</h1>
+          <span>1st Year Linguistics Major at USC</span>
+        </article>
+      </a>
+    </div>
+  </div>
+
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+   <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+</body>
+</html>

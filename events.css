@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.header {
+  color: #727272;
+  width: 550px;
+  text-align: center;
+  display: inline;
+}
+
+.header strong {
+  color: rgb(116, 31, 45);
+  margin: 10px;
+  padding-top: 30px;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+.header p {
+  margin: 10px;
+  padding-top: 30px;
+  font-size: 80px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+#logo-img {
+  position: absolute;
+  float: left;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  transition: all 1s ease-in-out;
+}
+/****************** NAV BAR ******************/
+nav {
+  margin: 20px;
+  background: #f9f9f9;
+  padding: 10px;
+}
+.menuItems {
+  list-style: none;
+  display: flex;
+}
+
+#nav-tab {
+  margin: 2px;
+}
+a {
+  text-decoration: none;
+  color: #8f8f8f;
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+#nav-tab:hover {
+  color: #b44531d2;
+  background-color: #eee5dae8;}
+
+.nav:hover .nav-content {
+  display: block;
+}
+
+/****************** DROPDOWN ******************/
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.dropdown {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+
+.dropdown-content {
+  display: none;
+  font-size: 10px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  font-size: 15px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: #b44531d2;
+  background-color: #eee5dae8;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/****************** INFO CARDS ******************/
+#info-cards {
+    margin: 10px;
+  }
+  .card {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: 4px solid #baa587;
+    margin-bottom: 20px;
+    background-image: url('https://www.musiccenter.org/media/uq3f2dot/21-22-laphil_salonen-bart%C3%A3-k-bjarnason-sibelius.png?anchor=center&mode=crop&width=1200&height=300&rnd=132837814695330000');
+    background-size: cover;
+  
+    @include media {
+      height: 500px;
+    }
+  }
+  
+  .inner {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background: white;
+  box-sizing: border-box;
+  padding: 50px;
+/* @include media {
+    width: 50%;
+    height: 50%;
+} */
+  }
+  
+  .title {
+  font-size: 15px;
+  color: black;  
+  text-align: center;
+  font-weight: 700;
+  color: rgb(116, 31, 45);
+  position: relative;
+  }
+  
+  .subtitle {
+    font-size: 15px;
+  color: #d08c60;
+  text-align: center;
+  }
+  
+  .card2 {
+  background-image: url('https://miro.medium.com/max/1400/1*BOgVPFtVEWxGWIGusZzSPA.png');
+    width: 50%;
+    height: 100%;
+  }
+
+  .card3 {
+    background-image: url('https://scontent-lax3-2.xx.fbcdn.net/v/t39.30808-6/274081582_5268643063159788_2015035044399761876_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=973b4a&_nc_ohc=AZP1maKKffIAX-ROA40&_nc_ht=scontent-lax3-2.xx&oh=00_AT_hrEZD6v-7zIFzWv_YNCb9CbJFfbuJOo0xhfVsV7cowQ&oe=6217A9E0');
+      width: 50%;
+      height: 100%;
+    }
+  
+    .card4 {
+        background-image: url('https://s1.ticketm.net/dam/a/b2e/39c41223-e16e-41f2-8102-9b6c4e1e3b2e_1314541_TABLET_LANDSCAPE_LARGE_16_9.jpg');
+          width: 50%;
+          height: 100%;
+        }
+    
+    .card5 {
+        background-image: url('https://www.themayan.com/wp-content/uploads/2022/01/rect-grupo.jpg');
+            width: 50%;
+            height: 100%;
+        }
+    
+    .card6 {
+        background-image: url('https://music.mxdwn.com/wp-content/uploads/2014/12/MotionCitySoundtrack-2005-1280x720.jpg');
+            width: 50%;
+            height: 100%;
+        }
+
+    .card7 {
+        background-image: url('https://s1.ticketm.net/dam/a/15e/d2959961-cc88-4697-8aca-3911aeb8e15e_1557231_TABLET_LANDSCAPE_LARGE_16_9.jpg');
+            width: 50%;
+            height: 100%;
+        }
+    
+    .card8 {
+        background-image: url('https://ucarecdn.com/4d141836-63a1-4464-8781-d45b0b40d3fc/-/crop/1522x1280/199,0/-/resize/1035x870/');
+            width: 50%;
+            height: 100%;
+        }
+ 
+    /*************NEXT BUTTON******************/
+    .nextbutton { 
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+      margin-bottom: 50px;
+      width: 50px;
+      height: 50px;
+      text-align: right;
+    }
+    
+    .nextbutton:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+
+    .next {
+      background-color: #baa587;
+      color: white;
+      width: 40px;
+      height: auto;
+      text-align: center;
+      align-content: center;
+      padding: 5px;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+    
+    .round {
+      border-radius: 50%;
+    }
+  /****************** TOP BUTTONS ******************/
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 0; /* Remove borders */
+    outline: 2px; /* Remove outline */
+    outline-color: #baa587;
+    background-color: white; /* Set a background color */
+    color: #baa587; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    font-size: 18px; /* Increase font size */
+    font-family: "Lucida Console", Monaco, monospace;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  

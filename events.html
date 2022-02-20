@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="events.css">
+        <title>SCout: Events</title>
+    </head>
+
+<body>
+  
+  <!-- HEADER -->
+  <div class="header">
+    <p><strong>SC</strong>out</p>
+    <img id="logo-img" src="/src/logo.png">
+    </div>
+
+    <section>
+    <nav>
+        <ul class="menuItems">
+        <li id="nav-tab"><a href="home.html" data-item='Home'>Home</a></li>
+        <li id="nav-tab"><a href='events.html' data-item='Projects'>Events</a></li>
+        <li id="nav-tab"><a href='daytrips.html' data-item='Blog'>Day Trips</a></li>
+        <li id="nav-tab"><a href='activities.html' data-item='Projects'>Activities</a></li>
+        <li id="nav-tab"><a href='restaurants.html' data-item='Projects'>Restaurants/Bars</a></li>
+        </ul>
+    </nav>
+    </section>
+    
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">USC</a>
+        <div class="dropdown-content">
+          <a href="#">UC - University of Cincinnati</a>
+          <a href="#">CU - University of Colorado</a>
+          <a href="#">USC - University of Southern California</a>
+        </div>
+    </li>
+
+
+  <!-- INFO CARDS -->
+   <h2 id="events-section">EVENTS</h2>
+   <div id="info-cards"></div>
+   <a href="https://www.musiccenter.org/tickets-free-events/resident-companies/la-phil/salonen-leads-bartok-bjarnason-and-sibelius/" class="card">
+       <div class="inner">
+       <h2 class="title">Esa-Pekka Salonen w/ Los Angeles Philharmonic</h2>
+       <time class="subtitle">Sun, 20 Feb, 14:00 GMT-8<time>
+       </div>
+   </a>
+       
+   <a href="https://allevents.in/los%20angeles/an-evening-of-jagoff-comedy-with-jimmy-dore/10000258248176247" class="card card2">
+       <div class="inner">
+       <h2 class="title">An Evening Of JagOff Comedy With JIMMY DORE!</h2>
+       <time class="subtitle">Sun, Feb 20<time>
+       </div>
+   </a>
+
+   <a href="https://facebook.com/events/fonda-theatre/dinosaur-jr-at-the-fonda-theatre-los-angeles-ca/952122495529676/" class="card card3">
+    <div class="inner">
+    <h2 class="title">Dinosaur Jr.</h2>
+    <time class="subtitle">Sun, Feb 20 21:00-23:00<time>
+    </div>
+    </a>
+
+    <a href="https://facebook.com/events/house-of-blues-anaheim/koo-koo-kanga-roo/875479013032515/" class="card card4">
+        <div class="inner">
+        <h2 class="title">HEAT Saturdays</h2>
+        <time class="subtitle">Sat 19 Feb – Sun 20 Feb<time>
+        </div>
+        </a>
+
+    <a href="https://www.themayan.com/events/grupo-niche-2/" class="card card5">
+        <div class="inner">
+        <h2 class="title">Grupo Niche</h2>
+        <time class="subtitle">Fri 25 Feb – Sat 26 Feb<time>
+        </div>
+    </a>
+
+    <a href="https://www.los-angeles-theatre.com/theaters/house-of-blues-anaheim/motion-city-soundtrack.php" class="card card6">
+        <div class="inner">
+        <h2 class="title">Motion City Soundtrack</h2>
+        <time class="subtitle">20 Feb – 8 Jul<time>
+        </div>
+    </a>
+
+    <a href="https://www.lalive.com/events/detail/justinbieber21" class="card card7">
+        <div class="inner">
+        <h2 class="title">Justin Bieber</h2>
+        <time class="subtitle">Mon 7 Mar – Tue 8 Mar<time>
+        </div>
+    </a>
+
+    <a href="https://www.laphil.com/events/performances/1443/2022-04-29/dudamel-leads-ades-dante" class="card card8">
+        <div class="inner">
+        <h2 class="title">Los Angeles Philharmonic</h2>
+        <time class="subtitle">MFri, Apr 29 11:00<time>
+        </div>
+    </a>
+    
+    <a id="nextbutton" href="#" class="next round">&#8250;</a>
+
+   <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+   <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+    
+   <body>
+
+<html>

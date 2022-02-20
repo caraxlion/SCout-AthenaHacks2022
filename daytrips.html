@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="daytrips.css">
+        <title>SCout Day Trips</title>
+        
+    <head>
+
+<body>
+    <div class="header">
+        <p><strong>SC</strong>out</p>
+        <img id="logo-img" src="/src/logo.png">
+        </div>
+    
+        <section>
+        <nav>
+            <ul class="menuItems">
+            <li id="nav-tab"><a href="home.html" data-item='Home'>Home</a></li>
+            <li id="nav-tab"><a href='events.html' data-item='Projects'>Events</a></li>
+            <li id="nav-tab"><a href='daytrips.html' data-item='Blog'>Day Trips</a></li>
+            <li id="nav-tab"><a href='activities.html' data-item='Projects'>Activities</a></li>
+            <li id="nav-tab"><a href='restaurants.html' data-item='Projects'>Restaurants/Bars</a></li>
+            </ul>
+        </nav>
+        </section>
+        
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">USC</a>
+            <div class="dropdown-content">
+              <a href="#">UC - University of Cincinnati</a>
+              <a href="#">CU - University of Colorado</a>
+              <a href="#">USC - University of Southern California</a>
+            </div>
+        </li>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+        <script>
+         //Get the button
+         var mybutton = document.getElementById("myBtn");
+         
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function() {scrollFunction()};
+         
+         function scrollFunction() {
+           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+             mybutton.style.display = "block";
+           } else {
+             mybutton.style.display = "none";
+           }
+        }
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+         }
+         </script>
+
+
+
+        <div class="blog-card spring-fever" id="MaDang">
+            <div class="title-content">
+              <h3><a href="#">K-Town Day Trip</a></h3>
+              <div class="intro"> <a href="#">MaDang Courtyard</a> </div>
+            </div>
+            <div class="card-info">
+                Into kpop? Looking for the new Twice album? IU album? Head to Kpop Music Town, which offers a beautiful variety of albums, lightsticks, photocards, stickers and more! Buy that album you've been eyeing...
+ 
+              <a id="continue-btn">Continue<span class="licon icon-arr icon-black"></span></a>
+            </div>
+            <div class="utility-info">
+              <ul class="utility-list">
+                <li><span class="licon icon-like"></span><a href="#">54</a></li>
+                <li><span class="licon icon-com"></span><a href="#">12</a></li>
+                <li><span class="licon icon-tag"></span><a href="#">Photos</a></li>
+              </ul>
+            </div>
+            <div class="gradient-overlay"></div>
+            <div class="color-overlay"></div>
+          </div><!-- /.blog-card -->
+        
+             <div id="continuemodal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1> K-Town Day Trip  </h1> 
+                <h2> MaDang Courtyard</h2> 
+                <h3> Location:  621 S Western Ave Los Angeles, CA 90005 </h3>
+                <h4> Transportation: Pennypinchers, you can take the bus for free</h4> 
+                <h5> Opening Hours: 8 AM - 11 PM</h5> 
+                <h6> </h6> 
+                <p>	Into kpop? Looking for the new Twice album? IU album? Head to Kpop Music Town, which offers a beautiful variety of albums, lightsticks, photocards, stickers and more! Buy that album you've been eyeing, and you'll get a poster for $3! Nearby, you'll find a Daiso, home of the cheap yet cute, a Somi-Somi for your taiyaki addiction, Paris Baguette for breakfast, pastries and cake, a chicken restaurant, shaved ice, sushi offerings and more! MaDang Courtyard has it all for a wonderful afternoon, satisfying and delighting all your senses!
+                </p>
+            </div>
+        
+            </div>
+
+          <script>
+            // Get the modal
+            var modal = document.getElementById("continuemodal");
+            // Get the button that opens the modal
+            var btn = document.getElementById("continue-btn");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+            </script>
+
+            <div class="blog-card spring-fever" id="ExpoParkPicnic">
+                <div class="title-content">
+                <h3><a href="#">Picnic Day</a></h3>
+                <div class="intro"> <a href="#">Exposition Park</a> </div>
+                </div>
+                <div class="card-info">
+                    Featuring roses in bloom all-year long, Exposition Park is gorgeous and a short walk campus, perfect for anyone who doesn’t feel like going far. Grab your trusty blanket and prepare some snacks and sandwiches... 
+
+                <a id="continue-btn2">Continue<span class="licon icon-arr icon-black"></span></a>
+                </div>
+                <div class="utility-info">
+                <ul class="utility-list">
+                    <li><span class="licon icon-like"></span><a href="#">23</a></li>
+                    <li><span class="licon icon-com"></span><a href="#">6</a></li>
+                    <li><span class="licon icon-tag"></span><a href="#">Photos</a></li>
+                </ul>
+                </div>
+                <div class="gradient-overlay"></div>
+                <div class="color-overlay"></div>
+            </div><!-- /.blog-card -->
+
+                <div id="continuemodal2" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1> Picnic Day  </h1> 
+                    <h2> Exposition Park</h2> 
+                    <h3> Location:  700 Exposition Park Drive Los Angeles, CA 90037 </h3>
+                    <h4> Transportation: Walk, it's close enough</h4> 
+                    <h5> Opening Hours: 6 AM - 10 PM</h5> 
+                    <h6> </h6> 
+                    <p>	Featuring roses in bloom all-year long, Exposition Park is gorgeous and a short walk campus, perfect for anyone who doesn’t feel like going far. Grab your trusty blanket and prepare some snacks and sandwiches for a perfect lazy, sunny afternoon amidst beautiful flowers. If you want to do a little more, walk a bit farther to find the breadth of Exposition Museums, from the Natural History Museum to the California African American Museum. Check out activities for more to do there. Either way, prepare for a delightful day either way, with food, company, insight and conversation.
+                    </p>
+                </div>
+
+                </div>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById("continuemodal2");
+                // Get the button that opens the modal
+                var btn = document.getElementById("continue-btn2");
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                modal.style.display = "block";
+                }
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+                }
+                </script>
+                
+
+          
+          <div class="blog-card spring-fever" id="NatureDate">
+            <div class="title-content">
+            <h3><a href="#">Peaceful Nature Date</a></h3>
+            <div class="intro"> <a href="#">Griffith Park Observatory </a> </div>
+            </div>
+            <div class="card-info">
+              Need a simple, relaxing getaway from the stress of school? Midterms finally done and ready to treat your exhausted self? Check out our picnic food recommendations or hit up your nearby Ralphs or H-Mart...
+
+            <a id="continue-btn3">Continue<span class="licon icon-arr icon-black"></span></a>
+            </div>
+            <div class="utility-info">
+            <ul class="utility-list">
+                <li><span class="licon icon-like"></span><a href="#">34</a></li>
+                <li><span class="licon icon-com"></span><a href="#">66</a></li>
+                <li><span class="licon icon-tag"></span><a href="#">Photos</a></li>
+            </ul>
+            </div>
+            <div class="gradient-overlay"></div>
+            <div class="color-overlay"></div>
+        </div><!-- /.blog-card -->
+
+            <div id="continuemodal3" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1> Peaceful Nature Date  </h1> 
+                <h2> Griffith Park Observatory </h2> 
+                <h3> Location: 2800 East Observatory Road Los Angeles, CA 90027 </h3>
+                <h4> Transportation: Bus is free, Uber if you can and want to pay</h4> 
+                <h5> Opening Hours: Weekends - 10 AM - 10 PM Weekdays - 12 PM - 10 PM </h5> 
+                <h6> </h6> 
+                <p>	Need a simple, relaxing getaway from the stress of school? Midterms finally done and ready to treat your exhausted self? Check out our picnic food recommendations or hit up your nearby Ralphs or H-Mart and prepare a feast for Griffith Park Observatory where you can enjoy picturesque views and destress with the serenity of nature. Explore further around the massive park, with hiking trails and magnificent trees galore and admire the austere light of the stars from the observatory.
+                </p>
+            </div>
+
+            </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("continuemodal3");
+            // Get the button that opens the modal
+            var btn = document.getElementById("continue-btn3");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+            </script>
+            
+
+            <div class="blog-card spring-fever" id="ThriftingTrip">
+                <div class="title-content">
+                <h3><a href="#">Shopping Trip</a></h3>
+                <div class="intro"> <a href="#">Westfield Century City Mall</a> </div>
+                </div>
+                <div class="card-info">
+                  This magnificent 3-story shopping complex boasts live music, food, and shopping for the parsimonious and the splurging...
+              
+                <a id="continue-btn4">Continue<span class="licon icon-arr icon-black"></span></a>
+                </div>
+                <div class="utility-info">
+                <ul class="utility-list">
+                    <li><span class="licon icon-like"></span><a href="#">70</a></li>
+                    <li><span class="licon icon-com"></span><a href="#">22</a></li>
+                    <li><span class="licon icon-tag"></span><a href="#">Photos</a></li>
+                </ul>
+                </div>
+                <div class="gradient-overlay"></div>
+                <div class="color-overlay"></div>
+              </div><!-- /.blog-card -->
+              
+                <div id="continuemodal4" class="modal">
+              
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h1> Shopping Trip  </h1> 
+                    <h2> Westfield Century City Mall </h2> 
+                    <h3> Location: 10250 Santa Monica Blvd, Los Angeles, CA 90067</h3>
+                    <h4> Transportation: Bus or Uber (~$20) </h4> 
+                    <h5> Opening Hours: 10 AM - 8 PM </h5> 
+                    <h6> </h6> 
+                    <p>	This magnificent 3-story shopping complex boasts live music, food, and shopping for the parsimonious and the splurging. Come admire the natural scenery and revamp your closet! Wander around, window-shop a bit, and dig out some excellent hidden gems and your next statement piece!
+                    </p>
+                </div>
+              
+                </div>
+              
+                  <script>
+                  // Get the modal
+                  var modal = document.getElementById("continuemodal4");
+                  // Get the button that opens the modal
+                  var btn = document.getElementById("continue-btn4");
+                  // Get the <span> element that closes the modal
+                  var span = document.getElementsByClassName("close")[0];
+                  // When the user clicks the button, open the modal 
+                  btn.onclick = function() {
+                  modal.style.display = "block";
+                  }
+                  // When the user clicks on <span> (x), close the modal
+                  span.onclick = function() {
+                  modal.style.display = "none";
+                  }
+                  // When the user clicks anywhere outside of the modal, close it
+                  window.onclick = function(event) {
+                  if (event.target == modal) {
+                      modal.style.display = "none";
+                  }
+                  }
+                  </script>          
+
+
+  
+
+
+
+    
+</body>
+
+
+
+
+<html>
