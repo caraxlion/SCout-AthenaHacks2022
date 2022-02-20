@@ -8,7 +8,18 @@ With SCout, you can look at pre-planned day trips, restaurants/bars, upcoming ev
 
 THE BUILDING PROCESS:
 
-Using HTML-CSS-Javascript, we 
+Our website was created using HTML-CSS-Javascript. Utilizing Domain.com we linked our code to our domain name, scoutting.tech. Our website was then deployed through our GitHub Repository.
+
+On our Home Page, you will see our Title and Logo,  University Drop-Down Menu, Navigation Bar, Image Slideshow, and information about the creators of this project. Our default university is USC, our host school. Selecting different universities will ideally change the location settings and suggestions for each suggestion page on the site. Our Navigation Bar is equipped to be utilized on every page. On the bottom of each page is a button that allows the user to return to the top of the page.
+
+Selecting the ‘Events’ tab in the Navigation Bar will direct you to our Events Page where we utilized data from Googles Cloud API to generate a list of local events. Each event option is linked to it’s corresponding event host site.
+
+Moving to the ‘Day Trips’ tab will direct you to the Day Trips Page. Here you will find blog posts about suggested day trip opportunities in your area. Each day trip features a modal with information about the suggested trip.
+
+Our Activities tab will direct you to the Activities Page where a multitude of different opportunities to explore and get to know your city within in a college-student’s budget are recommended.
+
+Our last tab, “Restaurants & Bars” leads you to our final page where restaurants and bars in the surrounding area are listed. Each card lists information about the location, hours,and  price with a direct link to the restaurant’s menu.
+ 
 
 CHALLENGES:
 
